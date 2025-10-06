@@ -5,10 +5,18 @@ metadata:
   namespace: portfolio
   labels:
     app: portfolio
+    component: frontend
+    service-type: clusterip
+  annotations:
+    description: "ClusterIP service for internal portfolio access"
 spec:
-  type: ClusterIP   # default, you can even omit this line
+  type: ClusterIP
   selector:
-    app: portfolio  # must match pod/deployment labels
+    app: portfolio
+    component: frontend
   ports:
-    - port: 80        # service port (inside cluster)
-      targetPort: 80  # container port
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
+  sessionAffinity: None
