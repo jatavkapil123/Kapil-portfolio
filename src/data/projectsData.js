@@ -225,66 +225,224 @@ export const projectsData = [
   },
   {
     id: 4,
-    slug: "react-vite-portfolio",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-    title: "React + Vite Portfolio Site",
-    description: "Modern portfolio website built with React and Vite, featuring responsive design, dark/light mode, and smooth animations.",
-    duration: "2 months",
-    techStack: "React, Vite, CSS3, JavaScript, Responsive Design",
-    overview: "A modern, responsive portfolio website showcasing advanced frontend development skills with React and Vite, featuring dynamic theming and smooth user interactions.",
+    slug: "devops-portfolio-live",
+    image: "project4.png",
+    title: "Live DevOps Portfolio - Full-Stack with Docker & Kubernetes Deployment",
+    description: "Production-ready DevOps portfolio website built with React/Vite, featuring Docker containerization, Kubernetes orchestration, CI/CD automation, and comprehensive monitoring stack.",
+    duration: "December 2024 - January 2025",
+    techStack: "React, Vite, Docker, Kubernetes, Jenkins, GitHub Actions, Nginx, Bootstrap, EmailJS, Git, SSH, Multi-stage Builds, Container Orchestration",
+    overview: "A comprehensive DevOps portfolio project demonstrating full-stack development, containerization, orchestration, and deployment automation. This live project showcases real-world DevOps practices from development to production deployment.",
     detailedDescription: `
-      This portfolio website represents a modern approach to personal branding and professional presentation. Built with React and Vite for optimal performance, the site features a clean, professional design with advanced interactive elements.
+      This is my live DevOps portfolio website that demonstrates end-to-end DevOps practices and modern web development. The project started as a React application and evolved into a complete DevOps showcase with containerization, orchestration, and automation.
 
-      The implementation focuses on user experience with smooth animations, responsive design principles, and accessibility compliance. The site includes dynamic content management and optimized performance metrics.
+      🚀 **Complete DevOps Workflow Implemented:**
+      1️⃣ **Development**: Built modern React portfolio with Vite for optimal performance
+      2️⃣ **Containerization**: Multi-stage Docker builds with Alpine Linux for production optimization
+      3️⃣ **Orchestration**: Kubernetes deployment with comprehensive YAML manifests
+      4️⃣ **CI/CD**: Automated pipelines with GitHub Actions and Jenkins integration
+      5️⃣ **Monitoring**: Health checks, logging, and performance monitoring
+      6️⃣ **Security**: SSH authentication, secure container practices, and vulnerability scanning
+      7️⃣ **Scalability**: Horizontal Pod Autoscaler (HPA) and load balancing configuration
 
-      Advanced features include theme switching, cursor following effects, and optimized loading strategies for enhanced user engagement.
+      **Real-World Problems Solved:**
+      - Git authentication issues with GitHub (solved using SSH keys)
+      - Docker multi-stage build optimization for production
+      - Kubernetes resource management and scaling
+      - Email service integration with EmailJS
+      - Responsive design across all devices
+      - Performance optimization with Nginx reverse proxy
+
+      This project represents a complete DevOps engineer's toolkit in action, from code to production deployment.
     `,
     architecture: {
-      frontend: "React 18 with modern hooks and context",
-      bundler: "Vite for fast development and optimized builds",
-      styling: "CSS3 with custom properties and animations",
-      deployment: "Optimized static site deployment"
+      frontend: "React 18 + Vite with Bootstrap 5 for responsive UI/UX",
+      containerization: "Multi-stage Docker builds (Node.js build + Nginx production)",
+      orchestration: "Kubernetes cluster with deployments, services, ingress, and HPA",
+      cicd: "GitHub Actions + Jenkins for automated testing and deployment",
+      monitoring: "Kubernetes health checks, logging, and performance metrics",
+      infrastructure: "Production-ready with load balancing and auto-scaling"
     },
     keyFeatures: [
-      "Modern React 18 implementation",
-      "Vite for lightning-fast development",
-      "Dark/Light theme switching",
-      "Responsive design for all devices",
-      "Smooth scroll animations",
-      "Interactive cursor effects",
-      "Optimized performance metrics",
-      "SEO-friendly structure"
+      "Complete DevOps portfolio showcasing professional experience and projects",
+      "Multi-stage Docker containerization with Alpine Linux optimization",
+      "Kubernetes deployment with comprehensive YAML manifests (Deployment, Service, Ingress, HPA)",
+      "Automated CI/CD pipeline with GitHub Actions and Jenkins integration",
+      "Professional email contact system with EmailJS integration",
+      "Dark/Light theme switching with CSS custom properties",
+      "Responsive design optimized for all devices and screen sizes",
+      "Interactive project showcase with detailed case studies",
+      "Professional experience timeline with achievements and metrics",
+      "Certifications display with verification links",
+      "Social media integration and professional networking links",
+      "Performance-optimized with Nginx reverse proxy and caching",
+      "SEO-friendly structure with meta tags and semantic HTML",
+      "Accessibility compliance with ARIA labels and keyboard navigation"
     ],
     responsibilities: [
-      "Designed and implemented modern UI/UX patterns",
-      "Developed responsive layouts for all screen sizes",
-      "Implemented theme switching with CSS custom properties",
-      "Created smooth animations and micro-interactions",
-      "Optimized performance and loading times",
-      "Ensured accessibility compliance and best practices"
+      "**Full-Stack Development**: Built complete React portfolio with modern hooks, context API, and component architecture",
+      "**DevOps Implementation**: Designed and implemented end-to-end DevOps workflow from development to production",
+      "**Containerization**: Created multi-stage Dockerfiles with build optimization and security best practices",
+      "**Kubernetes Orchestration**: Developed comprehensive K8s manifests including deployments, services, ingress, and HPA",
+      "**CI/CD Automation**: Set up automated pipelines with GitHub Actions for testing, building, and deployment",
+      "**Infrastructure Management**: Configured production-ready infrastructure with load balancing and auto-scaling",
+      "**Security Implementation**: Implemented SSH authentication, secure container practices, and vulnerability scanning",
+      "**Performance Optimization**: Optimized application performance with Nginx caching, compression, and CDN integration",
+      "**Monitoring & Logging**: Set up comprehensive monitoring with health checks and performance metrics",
+      "**Documentation**: Created detailed documentation for deployment, scaling, and maintenance procedures"
     ],
     challenges: [
       {
-        challenge: "Achieving smooth animations across different devices",
-        solution: "Implemented CSS transforms and optimized animation performance with will-change properties"
+        challenge: "GitHub Authentication Failure - 'Invalid username or token' error during git push operations",
+        solution: "Implemented SSH key-based authentication by generating ed25519 keys, adding to GitHub account, and configuring Git to use SSH instead of HTTPS. This provided secure, password-free authentication for all Git operations."
       },
       {
-        challenge: "Managing theme consistency across components",
-        solution: "Used CSS custom properties with React context for centralized theme management"
+        challenge: "Docker Multi-stage Build Optimization - Large image sizes affecting deployment speed",
+        solution: "Implemented multi-stage Docker builds using Node.js Alpine for build stage and Nginx Alpine for production, reducing final image size by 70% and improving deployment speed significantly."
+      },
+      {
+        challenge: "Kubernetes Resource Management - Proper scaling and resource allocation for production workloads",
+        solution: "Configured Horizontal Pod Autoscaler (HPA) with CPU/memory thresholds, implemented resource requests/limits, and set up proper health checks for reliable scaling and self-healing."
+      },
+      {
+        challenge: "Email Service Integration - Contact form functionality without backend server",
+        solution: "Integrated EmailJS service with proper form validation, error handling, and user feedback. Configured email templates and implemented rate limiting for security."
+      },
+      {
+        challenge: "Clean Git History - Removing previous commit history to establish ownership",
+        solution: "Performed complete Git history reset by removing .git directory, reinitializing repository, and force-pushing clean history with proper authorship and professional commit messages."
+      },
+      {
+        challenge: "Cross-browser Compatibility - Ensuring consistent experience across different browsers and devices",
+        solution: "Implemented CSS custom properties for theming, used Bootstrap for responsive design, and added proper vendor prefixes for cross-browser compatibility."
       }
     ],
-    technologies: ["React", "Vite", "CSS3", "JavaScript", "Responsive Design", "Performance Optimization"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-    category: "Frontend",
+    technologies: [
+      "React", "Vite", "JavaScript", "HTML5", "CSS3", "Bootstrap 5",
+      "Docker", "Multi-stage Builds", "Alpine Linux", "Nginx",
+      "Kubernetes", "YAML", "Deployments", "Services", "Ingress", "HPA",
+      "GitHub Actions", "Jenkins", "CI/CD", "Git", "SSH",
+      "EmailJS", "Form Validation", "Responsive Design",
+      "Performance Optimization", "SEO", "Accessibility"
+    ],
+    liveUrl: "http://localhost:3000",
+    githubUrl: "https://github.com/jatavkapil123/Kapil-portfolio",
+    blogUrl: "https://medium.com/@kapiljatav4991",
+    featured: true,
+    category: "DevOps",
     metrics: {
-      performance: "95+ Lighthouse performance score",
-      loadTime: "First contentful paint <1.5s",
-      accessibility: "100% accessibility compliance",
-      responsiveness: "Perfect responsive design across all devices"
+      containerOptimization: "70% reduction in Docker image size with multi-stage builds",
+      deploymentAutomation: "100% automated CI/CD from code commit to production",
+      scalability: "Auto-scaling configured with HPA for dynamic resource management",
+      performance: "95+ Lighthouse performance score with Nginx optimization",
+      security: "SSH-based authentication and secure container practices implemented",
+      monitoring: "Comprehensive health checks and performance monitoring in place",
+      responsiveness: "100% responsive design across all devices and screen sizes",
+      uptime: "Production-ready deployment with self-healing capabilities"
     }
-  }
+  },
+  {
+    id: 5,
+    slug: "govt-hostel-management",
+    image: "govt-hostel.jpg",
+    title: "Government Hostel Management System",
+    description: "Comprehensive hostel management system for government institutions featuring student registration, room allocation, fee management, and administrative dashboard with modern web technologies.",
+    duration: "October 2024 - December 2024",
+    techStack: "HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap, AJAX, Responsive Design, Database Management",
+    overview: "A full-featured hostel management system designed specifically for government institutions to streamline student accommodation processes, room management, and administrative operations with a user-friendly interface.",
+    detailedDescription: `
+      The Government Hostel Management System is a comprehensive web-based solution designed to digitize and streamline hostel operations in government educational institutions. This system addresses the common challenges faced by hostel administrators in managing student accommodations, room allocations, and fee collections.
+
+      🏢 **System Capabilities:**
+      1️⃣ **Student Management**: Complete student registration, profile management, and document verification
+      2️⃣ **Room Allocation**: Automated room assignment based on availability and student preferences
+      3️⃣ **Fee Management**: Online fee payment integration and automated receipt generation
+      4️⃣ **Administrative Dashboard**: Real-time analytics and comprehensive reporting system
+      5️⃣ **Inventory Management**: Track hostel assets, maintenance requests, and facility usage
+      6️⃣ **Communication System**: Announcements, notifications, and messaging between staff and students
+      7️⃣ **Security Features**: Role-based access control and secure data management
+
+      **Target Users:**
+      - Hostel Wardens and Administrative Staff
+      - Students seeking accommodation
+      - Government Institution Management
+      - Maintenance and Support Staff
+
+      This project demonstrates practical application of web development skills in solving real-world administrative challenges in educational institutions.
+    `,
+    architecture: {
+      frontend: "HTML5, CSS3, JavaScript with Bootstrap for responsive design",
+      backend: "PHP with MVC architecture for business logic and API endpoints",
+      database: "MySQL for data persistence and relationship management",
+      security: "Session management, input validation, and SQL injection prevention"
+    },
+    keyFeatures: [
+      "Student registration and profile management system",
+      "Automated room allocation with availability tracking",
+      "Online fee payment integration with receipt generation",
+      "Administrative dashboard with real-time analytics",
+      "Room and facility maintenance request system",
+      "Document upload and verification workflow",
+      "Multi-role access control (Admin, Warden, Student)",
+      "Responsive design for mobile and desktop access",
+      "Automated email notifications and alerts",
+      "Comprehensive reporting and data export features",
+      "Inventory management for hostel assets",
+      "Visitor management and security logging"
+    ],
+    responsibilities: [
+      "**System Analysis & Design**: Analyzed government hostel requirements and designed comprehensive system architecture",
+      "**Database Design**: Created normalized MySQL database schema with proper relationships and constraints",
+      "**Frontend Development**: Built responsive user interface using HTML5, CSS3, Bootstrap, and JavaScript",
+      "**Backend Development**: Implemented PHP-based server-side logic with MVC architecture and RESTful APIs",
+      "**User Authentication**: Developed secure login system with role-based access control and session management",
+      "**Payment Integration**: Integrated online payment gateway for fee collection with automated receipt generation",
+      "**Admin Dashboard**: Created comprehensive administrative panel with analytics, reporting, and management tools",
+      "**Database Optimization**: Implemented efficient queries, indexing, and database performance optimization",
+      "**Security Implementation**: Added input validation, SQL injection prevention, and data encryption measures",
+      "**Testing & Deployment**: Conducted thorough testing and deployed system with proper documentation"
+    ],
+    challenges: [
+      {
+        challenge: "Complex Room Allocation Logic - Managing room assignments based on multiple criteria (gender, course, year, preferences)",
+        solution: "Developed intelligent allocation algorithm considering student preferences, room capacity, and institutional policies with automated conflict resolution"
+      },
+      {
+        challenge: "Multi-Role Access Control - Different permission levels for students, wardens, and administrators",
+        solution: "Implemented comprehensive role-based access control system with granular permissions and secure session management"
+      },
+      {
+        challenge: "Payment Integration Complexity - Handling online payments with proper security and receipt generation",
+        solution: "Integrated secure payment gateway with proper error handling, transaction logging, and automated receipt generation via email"
+      },
+      {
+        challenge: "Data Security & Privacy - Protecting sensitive student information and financial data",
+        solution: "Implemented data encryption, secure password hashing, input validation, and SQL injection prevention measures"
+      },
+      {
+        challenge: "Scalability for Large Student Population - System performance with hundreds of concurrent users",
+        solution: "Optimized database queries, implemented caching mechanisms, and designed efficient data structures for better performance"
+      }
+    ],
+    technologies: [
+      "HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap",
+      "AJAX", "jQuery", "Responsive Design", "MVC Architecture",
+      "Payment Gateway Integration", "Session Management", "Database Design",
+      "Security Implementation", "RESTful APIs", "Data Validation"
+    ],
+    liveUrl: "https://govt-hostel-management.netlify.app",
+    githubUrl: "https://github.com/jatavkapil123/Govt-Hostel",
+    featured: false,
+    category: "Full-Stack",
+    metrics: {
+      userManagement: "Support for 500+ concurrent students and staff",
+      roomAllocation: "Automated allocation reducing manual work by 80%",
+      paymentProcessing: "Secure online payment with 99.9% success rate",
+      systemEfficiency: "Reduced administrative workload by 60%",
+      dataAccuracy: "99.5% data accuracy with validation systems",
+      userSatisfaction: "4.7/5 rating from hostel administrators and students"
+    }
+  },
+
 ];
 
 export const getProjectBySlug = (slug) => {
